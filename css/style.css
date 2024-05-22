@@ -1,3 +1,148 @@
-body{
-    background-color: aliceblue;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Elimina márgenes por defecto */
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* Fondo general para mejor contraste */
+}
+
+.container {
+    text-align: center; /* Centra horizontalmente el contenido dentro del div */
+    max-width: 1000px; /* Limita el ancho máximo para mejor legibilidad */
+}
+
+/* Estilos para la sección About Us */
+.aboutus {
+    background: linear-gradient(#0E8A0C, #88BB49);
+    padding: 30px; /* Espacio interno */
+    margin-bottom: 40px; /* Espacio inferior */
+    color: white; /* Texto blanco */
+}
+
+.aboutus h1 {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.aboutus p {
+    font-size: 1.2em; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+}
+
+.custom-text {
+    font-size: 24px; /* Cambia el tamaño de letra */
+    font-weight: bold; /* Muestra el texto en negrita */
+    color: #399237; /* Cambia el color de la letra */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px; /* Espacio entre filas */
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px; /* Espacio entre personas */
+}
+
+.person img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    background-color: #399237;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 160px;
+    font-weight: light; 
+    
+}
+
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .person img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .name {
+        font-size: 0.9em;
+        max-width: 120px;
+        padding: 8px 12px;
+        font-weight: 100; /* Cambiado a 100 para una fuente más ligera */
+    }
+
+    .top-row {
+        flex-wrap: wrap;
+        margin-bottom: 20px; /* Espacio inferior */
+    }
+
+    .bottom-row {
+        flex-wrap: wrap;
+    }
+
+    .person {
+        margin: 10px 10px;
+    }
+
+    .aboutus h1 {
+        font-size: 2em;
+    }
+
+    .aboutus p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-text {
+        font-size: 1.5em;
+    }
+
+    .person img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 0.8em;
+        max-width: 100px;
+        padding: 5px 10px;
+    }
+
+    .top-row, .bottom-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .person {
+        margin: 10px 0;
+    }
+
+    .aboutus h1 {
+        font-size: 1.5em;
+    }
+
+    .aboutus p {
+        font-size: 0.9em;
+    }
 }
