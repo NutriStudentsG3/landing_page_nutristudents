@@ -29,9 +29,7 @@ body{
 .odd-container{
     background-color: #F6F6F6;
 }
-.odd-container .feature-info{
-    grid-column: 2;
-}
+
 .odd-container .feature-image-container{
     grid-column: 1;
     grid-row: 1;
@@ -82,4 +80,23 @@ body{
     top: 100%;
     left: 50%;
     transform: translate(-50%,-100%);
+}
+
+
+/* tablet*/
+@media (max-width: 768px){
+    .feature-container-inside{
+        grid-template-columns: auto;
+    }
+    .odd-container .feature-image-container{
+        grid-row: 2;
+    }
+    .feature-container-inside{
+        padding-top: 2rem;
+    }
+
+}
+/* phone landscape and smaller*/
+@media (max-width: 480px){
+
 }
