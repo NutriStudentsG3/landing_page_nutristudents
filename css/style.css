@@ -1,3 +1,16 @@
+
+*{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+body{
+    max-width: 4000px;
+    margin: 0 auto;
+}
+
+
 .logo {
     margin-right: auto; 
 }
@@ -17,14 +30,6 @@
     background-color: #88BB49;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: black;
-    background-color: white;
-}
-
 header {
     background-color: white;
     color: #88BB49;
@@ -34,11 +39,6 @@ header {
     font-family: 'Inter', sans-serif;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
 .nav-bar {
     background-color: white;
