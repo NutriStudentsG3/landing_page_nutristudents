@@ -5,6 +5,11 @@
     margin: 0;
 }
 
+body{
+    max-width: 4000px;
+    margin: 0 auto;
+}
+
 
 .feature-section{
     min-width: 100%;
@@ -24,6 +29,14 @@
 .odd-container{
     background-color: #F6F6F6;
 }
+.odd-container .feature-info{
+    grid-column: 2;
+}
+.odd-container .feature-image-container{
+    grid-column: 1;
+    grid-row: 1;
+}
+
 
 .feature-info{
     display: flex;
@@ -60,14 +73,13 @@
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1;
 }
 
 .feature-img{
 
     height: 80%;
     position: relative;
-    top: calc(100% + 10px);
+    top: 100%;
     left: 50%;
     transform: translate(-50%,-100%);
 }
