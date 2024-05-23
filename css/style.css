@@ -10,6 +10,124 @@ body{
     margin: 0 auto;
 }
 
+.logo {
+    margin-right: auto; 
+}
+
+.nav-button {
+    background-color: #399237;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    border-radius: 20px;
+}
+
+.nav-button:hover {
+    background-color: #88BB49;
+}
+
+header {
+    background-color: white;
+    color: #88BB49;
+    text-align: left;
+    padding: 20px 0;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.nav-bar {
+    background-color: white;
+    color: #88BB49;
+    padding: 1px 20px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: black;
+}
+
+#menu li {
+    margin-right: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-weight:  300;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.cta-text{
+    text-align: left;
+    color: white;
+    padding-left: 50px;
+}
+
+.cta-content {
+    background: linear-gradient(#0E8A0C, #88BB49);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.cta-text p.light {
+    font-weight: 100;
+    font-size:45px;
+    font-family: 'Inter', sans-serif;
+}
+
+.cta-text p.medium {
+    font-weight: 300;
+    font-size:15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.cta-text p.extra-medium {
+    font-weight: 350;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px; 
+}
+
+.cta-text p {
+    margin: 0; 
+    padding: 0; 
+    line-height: 1; 
+}
+
+.cta-text p + p {
+    margin-top: 5px; 
+}
+
+.cta-text p.bold{
+    font-weight: 900;
+    font-size :45px;
+    font-family: 'Inter', sans-serif;
+}
+
+.cta-image img {
+    width: 60%; 
+    height: 50%;
+    float:right;
+    margin-right: 30px;
+}
+
 
 .feature-section{
     min-width: 100%;
@@ -98,5 +216,4 @@ body{
 }
 /* phone landscape and smaller*/
 @media (max-width: 480px){
-
 }
