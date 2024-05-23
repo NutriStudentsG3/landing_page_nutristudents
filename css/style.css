@@ -1,3 +1,55 @@
-body{
-    background-color: aliceblue;
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.plan-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.plan-item {
+    width: calc(50% - 20px);
+    border: 2.5px solid #EAF7D9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.plan-item p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+    color:black;
+}
+
+.plan-title{
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    color: #88BB49;
+    text-align: center;
+}
+
+.plan{
+    font-weight: 900;
+    background: linear-gradient(#88BB49, #0E8A0C);
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
