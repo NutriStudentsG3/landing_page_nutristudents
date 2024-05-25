@@ -1,4 +1,5 @@
 
+
 *{
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
@@ -20,7 +21,6 @@ body{
     border: none;
     padding: 10px 30px;
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
     font-weight: 300;
     border-radius: 20px;
 }
@@ -35,7 +35,10 @@ header {
     text-align: left;
     padding: 20px 0;
     font-weight: 900;
-    font-family: 'Inter', sans-serif;
+    box-shadow: 0 0 3px 0 gray;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 
@@ -44,7 +47,6 @@ header {
     color: #88BB49;
     padding: 1px 20px;
     font-weight: 900;
-    font-family: 'Inter', sans-serif;
 }
 
 #menu {
@@ -89,19 +91,16 @@ header {
 .cta-text p.light {
     font-weight: 100;
     font-size:45px;
-    font-family: 'Inter', sans-serif;
 }
 
 .cta-text p.medium {
     font-weight: 300;
     font-size:15px;
-    font-family: 'Inter', sans-serif;
 }
 
 .cta-text p.extra-medium {
     font-weight: 350;
     font-size: 13px;
-    font-family: 'Inter', sans-serif;
     margin-bottom: 20px; 
 }
 
@@ -200,9 +199,87 @@ header {
     transform: translate(-50%,-100%);
 }
 
+.abosutus-container {
+    text-align: center; /* Centra horizontalmente el contenido dentro del div */
+    max-width: 1000px; /* Limita el ancho máximo para mejor legibilidad */
+}
+
+/* Estilos para la sección About Us */
+.aboutus {
+    background: linear-gradient(#0E8A0C, #88BB49);
+    padding: 30px; /* Espacio interno */
+    margin-bottom: 40px; /* Espacio inferior */
+    color: white; /* Texto blanco */
+}
+
+.aboutus h1 {
+    font-size: 2.5em; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.aboutus p {
+    font-size: 1.2em; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    font-weight: lighter;
+}
+
+.custom-text {
+    font-size: 24px; /* Cambia el tamaño de letra */
+    font-weight: bold; /* Muestra el texto en negrita */
+    color: #399237; /* Cambia el color de la letra */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px; /* Espacio entre filas */
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px; /* Espacio entre personas */
+}
+
+.person img {
+    width: 160px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    background-color: #88BB49;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 160px;
+    font-weight: light; 
+    box-shadow: 0 0 3px 0 gray;
+    
+}
+
+
+/* Media queries para pantallas más pequeñas */
+
+
 
 /* tablet*/
 @media (max-width: 768px){
+    #menu{
+        display: none;
+    }
     .feature-container-inside{
         grid-template-columns: auto;
     }
@@ -212,8 +289,77 @@ header {
     .feature-container-inside{
         padding-top: 2rem;
     }
+    .person img {
+        width: 100px;
+    }
+    
+    .name {
+        font-size: 0.9em;
+        max-width: 120px;
+        padding: 8px 12px;
+        font-weight: 100; /* Cambiado a 100 para una fuente más ligera */
+    }
 
+    .top-row {
+        flex-wrap: wrap;
+        margin-bottom: 20px; /* Espacio inferior */
+    }
+
+    .bottom-row {
+        flex-wrap: wrap;
+    }
+
+    .person {
+        margin: 10px 10px;
+    }
+
+    .aboutus h1 {
+        font-size: 1.75rem;
+    }
+
+    .aboutus p {
+        font-size: 0.80rem;
+    }
 }
 /* phone landscape and smaller*/
 @media (max-width: 480px){
+    .custom-text {
+        font-size: 1.5em;
+    }
+
+    
+    .name {
+        font-size: 0.8em;
+        max-width: 100px;
+        padding: 5px 10px;
+    }
+    
+    .top-row, .bottom-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .person {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .person p{
+        max-width: 100%;
+        background-color: transparent;
+        color: #88BB49;
+        font-weight: bold;
+        font-size: larger;
+    }
+    
+    .person img {
+        width: 50%;
+    }
+    .aboutus h1{
+        text-align: center;
+        margin: 0;
+    }
+
+    .aboutus-info{
+        display: none;
+    }
 }
