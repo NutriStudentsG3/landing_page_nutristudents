@@ -1,3 +1,63 @@
-body{
-    background-color: aliceblue;
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #0E8A0C, #88BB49);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 65px;
+}
+
+.highlight-text {
+    font-size: 20px; 
+    color: #fff; 
+}
+
+.articles {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.article {
+    border: 3.5px solid #399237;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 30%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+}
+
+.article-content {
+    padding: 15px;
+}
+
+.article h2 {
+    font-size: 20px;
+    color: #444;
+    margin: 0 0 10px;
+    text-align: justify;
+}
+
+.article p {
+    color: #666;
+    text-align: justify;
+    margin: 0 0 15px; /*para aumentar el cuadro*/
+}
+
+.article .read-time {
+    font-size: 0.9em;
+    color: #999;
 }
