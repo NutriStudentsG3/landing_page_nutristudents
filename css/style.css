@@ -232,13 +232,13 @@ header {
 .plan-title{
     font-weight: 800;
     font-size: 30px;
-    color: #88BB49;
+    color: linear-gradient(#53b32f, #88BB49);
     text-align: center;
 }
 
 .plan{
     font-weight: 900;
-    background: linear-gradient(#5db33c, #88BB49);
+    background: linear-gradient(#53b32f, #88BB49);
     font-size: 40px;
     color: white;
     text-align: center;
