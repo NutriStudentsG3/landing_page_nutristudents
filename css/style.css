@@ -396,6 +396,75 @@ header {
 }
 
 
+/*testimonio*/
+
+.color-background {
+    font-family: "Inria Sans", sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px; /* Añadir un margen inferior para separar las secciones */
+
+}
+
+.title {
+    color: #88BB49;
+    font-size: 50px;
+    margin-bottom: 50px; /* Reducir el espacio inferior */
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.testimonial-group {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.images-grid img {
+    width: 150px; /* Establecer un ancho fijo */
+    max-width: 100%; /* Ajuste el ancho máximo de las imágenes */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.text {
+    font-size: large;
+    max-width: 500px;
+    margin:  0 auto;    
+    .author{
+        font-size: small;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
+.text p{
+    font-style: italic;
+}
+
+
+
+
 /* tablet*/
 @media (max-width: 768px){
     #menu{
@@ -452,6 +521,9 @@ header {
     .contact{
         flex-direction: column;
     }
+    .testimonial-group{
+        grid-template-columns: auto;
+    }
 }
 /* phone landscape and smaller*/
 @media (max-width: 480px){
@@ -494,87 +566,4 @@ header {
     .aboutus-info{
         display: none;
     }
-}
-
-/*testimonio*/
-
-.color-background {
-    font-family: "Inria Sans", sans-serif;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.container {
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px; /* Añadir un margen inferior para separar las secciones */
-
-}
-
-.title {
-    color: #88BB49;
-    font-size: 50px;
-    margin-bottom: 50px; /* Reducir el espacio inferior */
-}
-
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.testimonial-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.images-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;
-    margin-left: auto; /* Ajuste para evitar el margen a la izquierda */
-    margin-right: auto; /* Ajuste para evitar el margen a la derecha */
-    justify-content: center; /* Centra horizontalmente */
-    text-align: center; /* Centra horizontalmente dentro del contenedor */
-    margin-top: -50px; /* Ajustar el margen superior para mover las imágenes hacia abajo */
-
-
-}
-
-.images-grid.left-align {
-    justify-self: start;
-    margin-left: -450px; /* Asegurar que no haya margen a la izquierda */
-
-    
-}
-
-.images-grid.right-align {
-    justify-self: start; 
-    margin-right: -450px; /* Asegurar que no haya margen a la derecha */
-    margin-bottom: 80px; /* Ajustar el margen inferior para mover las imágenes hacia abajo */
-    margin-top: -570px; /* Ajustar el margen superior para mover las imágenes hacia abajo */
-
-}
-
-.images-grid img {
-    width: 150px; /* Establecer un ancho fijo */
-    max-width: 100%; /* Ajuste el ancho máximo de las imágenes */
-    height: auto;
-    border-radius: 10px;
-}
-.images-grid.left-align img,
-.images-grid.right-align img {
-    margin-top: 50px; /* Ajustar el margen superior para mover las imágenes hacia abajo */
-}
-
-.text {
-    max-width: 500px;
-    margin-bottom: 300px;
-    margin-top: -320px; /*para mover de arriba abajo*/
 }
