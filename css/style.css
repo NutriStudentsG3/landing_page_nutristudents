@@ -26,7 +26,6 @@ body{
 
 .nav-button:hover {
     background-color: #88BB49;
-
 }
 
 header {
@@ -41,19 +40,12 @@ header {
     z-index: 2;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 
 .nav-bar {
     background-color: white;
     color: #88BB49;
     padding: 1px 20px;
     font-weight: 900;
-
 }
 
 #menu {
@@ -71,9 +63,7 @@ header {
 #menu a {
     text-decoration: none;
     color: black;
-
     font-weight:  300;
-
 }
 
 .nav-content {
@@ -405,6 +395,177 @@ header {
 }
 
 
+/*testimonio*/
+
+.color-background {
+    font-family: "Inria Sans", sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px; /* Añadir un margen inferior para separar las secciones */
+
+}
+
+.title {
+    color: #88BB49;
+    font-size: 50px;
+    margin-bottom: 50px; /* Reducir el espacio inferior */
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.testimonial-group {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.images-grid img {
+    width: 150px; /* Establecer un ancho fijo */
+    max-width: 100%; /* Ajuste el ancho máximo de las imágenes */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.text {
+    font-size: large;
+    max-width: 500px;
+    margin:  0 auto;    
+    .author{
+        font-size: small;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
+.text p{
+    font-style: italic;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-bar {
+    background-color: white;
+    color: #88BB49;
+    padding: 1px 20px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: black;
+}
+
+#menu li {
+    margin-right: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto; 
+}
+
+.nav-button {
+    background-color: #399237;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    border-radius: 20px;
+}
+
+
+#media {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+
+.media-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-item {
+    background-color: #fbfbfb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #000000;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.media-item h3 {
+    color: #88BB49; /* Color del texto */
+    font-size: 24px; /* Tamaño de la letra */
+}
+.laptop-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin: 0 auto;
+}
+
+.laptop-image {
+    width: 102%;
+    height: 100%;
+    display: block;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 7%;  
+    left: 10%;  
+    width: 82%; 
+    height: 82%; 
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 /* tablet*/
 @media (max-width: 768px){
     #menu{
@@ -461,6 +622,9 @@ header {
     .contact{
         flex-direction: column;
     }
+    .testimonial-group{
+        grid-template-columns: auto;
+    }
 }
 /* phone landscape and smaller*/
 @media (max-width: 480px){
@@ -504,7 +668,6 @@ header {
         display: none;
     }
 }
-
 
 .logo {
     margin-right: auto; 
@@ -560,4 +723,5 @@ header {
     line-height: 1.6;
     font-family: 'Inter', sans-serif;
 }
+
 
