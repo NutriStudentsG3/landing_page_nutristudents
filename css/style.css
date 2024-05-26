@@ -64,7 +64,6 @@ header {
     text-decoration: none;
     color: black;
     font-weight:  300;
-
 }
 
 .nav-content {
@@ -72,7 +71,6 @@ header {
     justify-content: center; 
     align-items: center;
 }
-
 
 .cta-text{
     text-align: left;
@@ -288,7 +286,6 @@ header {
 }
 
 .image-container {
->>>>>>> 2ee7c2834a95e5387578443a0038597e277159cc
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -398,6 +395,75 @@ header {
 }
 
 
+/*testimonio*/
+
+.color-background {
+    font-family: "Inria Sans", sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px; /* Añadir un margen inferior para separar las secciones */
+
+}
+
+.title {
+    color: #88BB49;
+    font-size: 50px;
+    margin-bottom: 50px; /* Reducir el espacio inferior */
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.testimonial-group {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.images-grid img {
+    width: 150px; /* Establecer un ancho fijo */
+    max-width: 100%; /* Ajuste el ancho máximo de las imágenes */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.text {
+    font-size: large;
+    max-width: 500px;
+    margin:  0 auto;    
+    .author{
+        font-size: small;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+}
+.text p{
+    font-style: italic;
+}
+
+
+
+
 /* tablet*/
 @media (max-width: 768px){
     #menu{
@@ -454,6 +520,9 @@ header {
     .contact{
         flex-direction: column;
     }
+    .testimonial-group{
+        grid-template-columns: auto;
+    }
 }
 /* phone landscape and smaller*/
 @media (max-width: 480px){
@@ -497,8 +566,6 @@ header {
         display: none;
     }
 }
-
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
