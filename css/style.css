@@ -47,6 +47,7 @@ header {
     color: #88BB49;
     padding: 1px 20px;
     font-weight: 900;
+    font-family: 'Inter', sans-serif;
 }
 
 #menu {
@@ -434,7 +435,7 @@ header {
 /*testimonio*/
 
 .color-background {
-    font-family: "Inria Sans", sans-serif;
+    font-family: 'Inter', sans-serif;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -660,7 +661,7 @@ header {
 
 .gradient-background {
     background: linear-gradient(to bottom, #0E8A0C, #88BB49);
-    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     padding: 20px; 
 }
 
