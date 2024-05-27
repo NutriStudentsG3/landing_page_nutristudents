@@ -452,7 +452,7 @@ header {
 
 .title {
     color: #88BB49;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 50px;
     margin-bottom: 50px; /* Reducir el espacio inferior */
 }
@@ -505,54 +505,6 @@ header {
     margin: 0 auto;
     padding: 0 20px;
 }
-
-.nav-bar {
-    background-color: white;
-    color: #88BB49;
-    padding: 1px 20px;
-    font-weight: 900;
-    font-family: 'Inter', sans-serif;
-}
-
-#menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    color: black;
-}
-
-#menu li {
-    margin-right: 20px;
-}
-
-#menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: 100;
-}
-
-.nav-content {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-}
-
-.logo {
-    margin-right: auto; 
-}
-
-.nav-button {
-    background-color: #399237;
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    font-weight: 100;
-    border-radius: 20px;
-}
-
 
 #media {
     padding: 40px 20px;
@@ -608,31 +560,16 @@ header {
     margin-right: auto; 
 }
 
-.nav-button {
-    background-color: #399237;
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    font-weight: 100;
-    border-radius: 20px;
-}
-
-.nav-button:hover {
-    background-color: #399237;
-}
-
-#faq {
+#FAQ {
     padding: 40px 20px;
     color: white;
     font-weight: 900;
     font-family: 'Inter', sans-serif;
 }
 
-#faq h2 {
+#FAQ h2 {
     color: #88BB49;
-    font-weight: 350;
+    font-weight: 800;
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
@@ -650,6 +587,7 @@ header {
 .faq-item h3 {
     color: #399237;
     font-weight: 350;
+    text-align: left;
     margin-bottom: 10px;
     font-family: 'Inter', sans-serif;
 }
@@ -657,6 +595,7 @@ header {
 .faq-item p {
     color: #333;
     line-height: 1.6;
+    text-align: left;
     font-family: 'Inter', sans-serif;
 }
 
@@ -679,7 +618,7 @@ header {
 .tituloh {
     text-align: center;
     color: #fff;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 55px;
 }
 
