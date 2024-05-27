@@ -316,6 +316,7 @@ header {
     font-weight: bold; /* Muestra el texto en negrita */
     color: #399237; /* Cambia el color de la letra */
     margin-bottom: 20px; /* Espacio inferior */
+    text-align: center; /* Centra el texto horizontalmente */
 }
 
 .image-container {
