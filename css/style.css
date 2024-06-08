@@ -204,9 +204,11 @@ header {
     margin: 0 auto;
 }
 .exclusive-title{
-    font-size: larger;
+    font-size: 30px;
     font-weight: bold;
-    
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color:#88BB49;
 }
 
 .exclusive-content{
@@ -219,19 +221,37 @@ header {
     margin: 1rem 0;
 }
 .exclusive-card{
-    background-color: #88BB49;
+    background-color: #EAF7D9;
     width: 100%;
     height: 100%;
     border-radius: 20px;
     padding: 5px 0;
-    color: white;
     font-size: larger;
     display: flex;
     flex-direction: column;
 }
 
+.exclusive-text{
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #88BB49;
+}
 .exclusive-info{
-    font-size:small;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+    color:black;
+}
+
+.exclusive-image {
+    width: 450px;  /* Ajusta este valor según tus necesidades */
+    height: 250px; 
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 20px;
+    /* Centra la imagen horizontalmente y añade margen inferior */
 }
 /*Prices*/
 .plan-container {
@@ -862,4 +882,55 @@ footer {
     .aboutus-info{
         display: none;
     }
+}
+
+/*Historias de exito (ver mas)*/
+
+.titulo-historiaExito {
+    text-align: center;
+    color: #399237;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.img-historiaExito{
+    width: 500px;  /* Ajusta este valor según tus necesidades */
+    height: 360px; 
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 20px;
+}
+
+.success-story {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.story-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.story-text {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.story-text p {
+    line-height: 1.6;
+    color: black;
+}
+
+main {
+    padding: 2rem;
 }
